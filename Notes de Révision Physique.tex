@@ -9,7 +9,7 @@
 \usepackage{amsmath}
 \usepackage{siunitx} %physics units
 \usepackage{graphicx} % Images
-\graphicspath{ {./} }
+\graphicspath{ {./images/} }
 \usepackage{fancyhdr}
 
 %Border
@@ -206,7 +206,19 @@ Attention: Il y a toujours une conservation de la charge. Une charge positive va
 \textbf{Définitions:}
 \begin{itemize}
 \item Résistance: Le rapport entre la tension et l'intensité du courant. Plus la résistance est grande, plus on aura besoin de différence de potentiel pour que le courant passe (en \si{\ohm} ou \si{\volt\per\ampere}).
+\item Loi d'Ohm: Un appareil qui respecte la loi d'Ohm est un appareil qui respecte cette relation: $V \propto I$; la résistance est constante.
+\item Puissance: En électricité, la puissance est également la tension fois l'intensité.
+\item Première loi de Kirchoff: Dans une jonction, $\sum i_{in} = \sum i_{out}$.
+\item Deuxième loi de Kirchoff: Dans une boucle, $\sum V=0$.
+\item Potentiomètre: Appareil à 3 bornes qui permet de varier la résistance pour des raisons expérimentales. Retenir le montage ci-dessous par cœur.
 \end{itemize}
+Attention: Avec la deuxième loi de Kirchoff, il faut choisir une direction (avec les aiguilles de la montre ou pas), ensuite additionner ou soustraire les tensions. Si la direction va du négatif vers le positif d'une pile alors on additionne la tension, sinon on soustrait. Si la direction va avec les résistances on soustrait sinon on additionne.\\
+Attention: Les résistance s'additionnent en série $R_{total}=R_1+R_2+\cdots$. En dérivation $1/R_{total}=1/R_1+1/R_2+\cdots$.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{potential_divider}
+\end{figure}
+
 \pagebreak
 
 \section{Mouvement Circulaire et Gravitation}
@@ -282,7 +294,7 @@ Question typique: donne la distance $d$ entre 2 sources et il faut trouver la di
 \begin{itemize}
 \item Effet Doppler: Le changement dans la fréquence reçue à cause de la vitesse relative entre la source et l'observateur.
 \end{itemize}
-Attention: Pour savoir s'il faut utiliser + ou -- dans la formule, il faut voire ils s'éloignent ou s'approchent. Dans le premier cas la fréquence augmente et dans l'autre elle diminue.
+Attention: Pour savoir s'il faut utiliser + ou -- dans la formule, il faut voire s'ils s'éloignent ou s'approchent. Dans le premier cas la fréquence augmente et dans l'autre elle diminue.
 \pagebreak
 
 \section{Champs}
