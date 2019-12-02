@@ -2,6 +2,7 @@
 
 %French setting up
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 
@@ -13,6 +14,7 @@
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage[version=4]{mhchem} %Chemical equations
+\newcommand*\cec[1]{\cesplit{{\,\ }{\0}}{#1}} %For commas
 
 %Border
 \usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
@@ -212,6 +214,75 @@ Attention: Les coefficients des molécules doivent être mis en puissance. Ex:
 \pagebreak
 
 \section{Acides et Bases}
+\textbf{Définitions:}
+\begin{itemize}
+\item Acide: Selon la théorie de Bronsted-Lowry, c'est une matière qui perd le proton \ce{H+}. Ex: \cec{HCl, HCO3, H2SO4}.
+\item Base: Selon la théorie de Bronsted-Lowry, c'est une matière qui reçoit le proton \ce{H+}. Ex: \cec{NaOH, KOH, NH4OH}.
+\item Amphiprotique: Une matière qui peut réagir comme un acide ou un base de Bronsted-Lowry selon le milieu.
+\item Acide/Base conjuguée: La matière qui est produite après la réaction de la base/de l'acide. Un paire s'appelle une paire acide-base conjuguée. Ex: \ce{H2O}
+\item Acide/Base fort(e): Acide/base qui est complètement ionisée dans l'eau. La réaction est irréversible, il sont des bons conducteurs d'électricité et leur paire conjuguée est faible. Ex: Acide: \ce{HCl, H2SO4, HNO3}, Base: \ce{NaOH, KOH}.
+\item Acide/Base fort(e): Acide/base qui est partiellement ionisée dans l'eau. La réaction peut être réversible et ils sont des mauvais conducteurs d'électricité. Ex: Acide: \ce{H2CO3, H3PO4} et tous les acides organique, Base: \ce{NH4OH}.
+\item pH: Puissance d'hydrogène = $-\log[\ce{H+}]$ et $pH + pOH = 14$. Plus le pH est petit, plus la solution est acide.
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{Réactions avec les acides:}
+
+\begin{center}
+1. Acide + Métal $\rightarrow$ Sel + Hydrogène. Ex:
+\[
+\ce{2HCl + Mg -> MgCl2 + H2}
+\]
+
+2. Acide + Oxyde Métallique $\rightarrow$ Sel + Eau. Ex:
+\[
+\ce{2HCl + MgO -> MgCl2 + H2O}
+\]
+
+3. Acide + Carbonate/Hydrogénocarbonate $\rightarrow$ Sel + Eau + Dioxyde de carbone. Ex:
+\[
+\ce{2HCl + Na2CO3 -> 2NaCl + H20 + CO2}
+\]
+
+4. Acide + Base $\rightarrow$ Sel + Eau. Ex:
+\[
+\ce{HCl + NaOH -> NaCl + H2O}
+\]
+\end{center}
+
+\vspace{0.5em}
+\textbf{Pluies acides:}
+Ils sont les pluies qui sont polluées et donc endommagent les plantes et les bâtiments. Ces pluies sont formées d'acide nitrique ou d'acide sulfurique. Les pluies sont naturellement acide à cause du dioxyde de carbone, mais ceci a un pH = 5.6 car c'est un acide faible.
+\[
+\ce{CO2 + H2O -> H2CO3}
+\]
+
+Oxydation de l'azote:
+\begin{align*}
+\ce{2NO + O2 &-> 2NO2\\
+2NO2 + H20 &-> HNO3 + HNO2\\
+HNO2 + O2 &-> 2HNO3}
+\end{align*}
+
+Oxydation de souffre:
+\begin{align*}
+\ce{2SO2 + O2 &-> 2SO3\\
+SO3 + H2O &-> H2SO4}
+\end{align*}
+
+Réaction avec le calcaire (les bâtiments):
+\[
+\ce{H2SO4 + CaCO3 -> CaSO4 + H2O + CO2}
+\]
+
+\vspace{0.5em}
+\textbf{Méthodes pour diminuer les pluies acides:}\\
+Pré-combustion: Broyer le charbon et la mettre dans l'eau et par flottement on diminue le souffre.\\
+Post-combustion: Éliminer ces oxydes à l'aide des réaction chimique avec la chaux:
+\[
+\ce{CaO + SO2 -> CaSO3}
+\]
+pour éliminer les oxydes de souffre avant d'être libérés dans l'air.
 \pagebreak
 
 \section{Processus Redox}
