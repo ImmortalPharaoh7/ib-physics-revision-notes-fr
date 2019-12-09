@@ -82,7 +82,7 @@ Attention: Quand on traite un problème de 2 dimensions, il faut toujours sépar
 \textbf{Définitions:}
 \begin{itemize}
 \item Force: La masse fois l'accélération (en \si{\newton} ou \si{\kilogram\metre\per\second\squared}).
-\item Frottement: La force qui est appliquée entre deux objets on contact.
+\item Frottement: La force qui est appliquée entre deux objets en contact.
 \item Première loi de Newton: Si un objet ne subit aucune force, il est soit au repos ou en mouvement rectiligne uniforme.
 \item Deuxième loi de Newton: La somme des forces réagissant sur un objet $F=ma$.
 \item Troisième loi de Newton: Si un objet A exerce une force sur un objet B, alors objet B exerce une force sur A de même grandeur et de sens opposé $F_{BA}=-F_{AB}$.
@@ -198,7 +198,7 @@ Attention: Pour un système fermé-fermé et ouvert-ouvert, $\lambda _0= 2l$ et 
 \item Champ électrique négatif: Champ créé par une charge négative. Il est un champ entrant.
 \item Loi de Coulomb: La force entre deux charge est $\propto \dfrac{q_1q_2}{r^2}$.
 \item Conducteur: Une matière est considérée comme conducteur si un courant peut passer. Ceci est dû aux électrons libres.
-\item Potentiel d'énergie électrique: Énergie d'une charge dû à sa position dans un champ électrique en (\si{\joule}). Comme un objet dans un champs gravitationnel.
+\item Potentiel d'énergie électrique: Énergie d'une charge dû à sa position dans un champ électrique en (\si{\joule}). Comme un objet dans un champ gravitationnel.
 \item Différence de potentiel électrique: Différence d'énergie entre deux points dans un champ électrique, par unité de charge (en \si{\volt} ou \si{\joule\per\coulomb}).
 \item Courant: Le mouvement des charges dans un circuit. Le circuit doit être fermé pour maintenir un courant. C'est également le taux mouvement de la charge (en \si{\ampere}).
 \end{itemize}
@@ -235,9 +235,9 @@ Attention: Plus le courant est fort, plus une pile déchargera plus rapidement.
 \subsection{Effet Magnétique des Courants Électriques}
 \textbf{Définitions:}
 \begin{itemize}
-\item Champs magnétique: Champ créé par un aimant, une charge en mouvement ou un conducteur parcouru par un courant. Un champs magnétique exerce une force sur les métaux, les charges en mouvement et les conducteurs parcourus par un courant. La direction du champ sort du pôle Nord et entre par le pôle Sud. L'unité du champs est en Tesla (\si{T} ou \si{N.A^{-1}.m^{-1}}). 
+\item Champ magnétique: Champ créé par un aimant, une charge en mouvement ou un conducteur parcouru par un courant. Un champ magnétique exerce une force sur les métaux, les charges en mouvement et les conducteurs parcourus par un courant. La direction du champ sort du pôle Nord et entre par le pôle Sud. L'unité du champ est en Tesla (\si{T} ou \si{N.A^{-1}.m^{-1}}). 
 \end{itemize}
-Attention: La force résultante d'un objet qui est dans un champs magnétique est toujours perpendiculaire à la vitesse (s'il est un électron) ou la direction du courant (s'il est un conducteur traversé par un courant) et au champs. C'est le produit vectoriel. Le champ joue toujours le rôle de l'axe des $y$.\\
+Attention: La force résultante d'un objet qui est dans un champ magnétique est toujours perpendiculaire à la vitesse (s'il est un électron) ou la direction du courant (s'il est un conducteur traversé par un courant) et au champ. C'est le produit vectoriel. Le champ joue toujours le rôle de l'axe des $y$.\\
 Attention: La direction d'une particule dépend de sa charge; un électron ira contre le sens de la force résultante.\\
 Attention: Le rôle du champ magnétique est de changer la direction des particules (force toujours perpendiculaire à la vitesse et donc c'est un mouvement circulaire uniforme).\\
 Attention: On utilise la règle de la main droite pour trouver le sens du champ magnétique.
@@ -320,11 +320,29 @@ Attention: Pour savoir s'il faut utiliser + ou -- dans la formule, il faut voire
 \pagebreak
 
 \section{Champs}
-%\subsection{Description des Champs}
-%\textbf{Définitions:}
-%\begin{itemize}
-%
-%\end{itemize}
+\subsection{Description des Champs}
+\textbf{Définitions:}
+\begin{itemize}
+\item Champ: Concept qui permet d'exprimer l'influence d'un objet sur l'espace qui l'entoure. Dans le programme il y a le champ gravitationnel et le champ électrique. Le champ est une grandeur vectorielle.
+\item Intensité du champ ($g$): Force par unité de masse/charge qu'un objet subira dans un point dans le champ (en \si{N.kg^{-1}} ou \si{N.C^{-1}}).
+\item Potentiel gravitationnel au point P: Énergie par unité de masse qui doit être fournit pour transporter un objet de l'infini au point P (en \si{J.kg^{-1}}).
+\item Potentiel électrique au point P: Énergie par unité de charge qui doit être fournit pour transporter une charge de l'infini au point P (en \si{V} ou \si{J.C^{-1}}).
+\item Différence de potentiel entre A et B: Travail nécessaire pour transporter une masse/charge du point A à B.
+\item Surfaces équipotentielles: Surfaces qui regroupent tous les points qui ont le même potentiel.
+\end{itemize}
+Attention: La différence de potentiel ne dépend pas du trajet pris.\\
+Attention: Le potentiel est un scalaire; il faut additionner les potentiels si un objet est soumis à plusieurs champs.\\
+Attention: L'intensité du champ gravitationnel peut être déduit en calculant l'opposé de la pente d'un graphe qui mesure la variation du potentiel gravitationnel en fonction de la distance $g=-\Delta V_g/\Delta r$.\\
+Attention: Quand un champ est uniforme (champ gravitationnel proche de la surface d'une planète ou champ électrique entre deux plaques parallèles, l'intensité du champ est constante $E=V/d$ ou $g=-V_g/r$.
+
+\subsection{Champs au Travail}
+\textbf{Définitions:}
+\begin{itemize}
+\item Vitesse de libération: Vitesse nécessaire qui doit être fournis à un objet sur la surface d'une planète pour pouvoir quitter l'influence du champ de cette planète. Un trou noir est formé quand la vitesse de libération est supérieur à la vitesse de la lumière.
+\item Vitesse orbitale: Vitesse avec laquelle un objet orbite autour d'une planète à un rayon spécifique.
+\item Loi de Kepler: Relation entre la période d'orbite et son rayon: $GMT^2=4\pi ^2r^3$.
+\end{itemize}
+Attention: Quand un objet est en orbite: \[E_T=-\frac{1}{2} \frac{GMm}{r}=\frac{E_p}{2}=-E_c\]
 \pagebreak
 
 \section{Induction Électromagnétique}
