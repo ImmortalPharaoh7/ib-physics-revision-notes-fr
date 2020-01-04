@@ -346,6 +346,37 @@ Attention: Quand un objet est en orbite: \[E_T=-\frac{1}{2} \frac{GMm}{r}=\frac{
 \pagebreak
 
 \section{Induction Électromagnétique}
+\subsection{Induction Électromagnétique}
+\textbf{Définitions:}
+\begin{itemize}
+\item Flux magnétique: Quantité de ligne de champ magnétique entrant dans une bobine ou un circuit. $\phi = BA\cos \theta$ avec $\theta$ l'angle entre le champ et la normale du plan (en \si{\weber} ou \si{\tesla\per\meter\squared}).
+\item Champ magnétique induit: Champ magnétique créé par un conducteur pour \emph{s'opposer} au changement dans le flux magnétique (Loi de Lenz).
+\item Force électromotrice induite: Tension qui est dû au mouvement d'un conducteur dans un champ magnétique, car les électrons subissent une force et donc il y a une différence de potentiel au bornes du conducteur. $\varepsilon = BvlN$ pour $N$ spires. Dans une boucle, ceci est aussi égale à le taux de flux magnétique $\varepsilon = \Delta \phi / \Delta t$ (Loi de Faraday).
+\end{itemize}
+Les lois de Lenz et de Faraday peuvent être utilisées pour montrer qu'avec $N$ spires\[\varepsilon = -N\frac{\Delta\phi}{\Delta t}\]
+Attention: Il faut toujours prendre en compte la conservation de l'énergie; l'énergie électrique doit provenir d'une autre source (énergie mécanique dans ce cas).
+
+\subsection{Production et Transport d'Énergie}
+\textbf{Définition:}
+\begin{itemize}
+\item Valeur modal (root mean square) pour la tension et l'intensité: Les valeurs moyennes d'un courant alternatif.
+\item Transformateur: Outil qui sert à changer la tension et l'intensité d'un courant alternatif en roulant plusieurs spires pour le courant d'entré et d'autres pour le courant de sortie. La tension augmente avec le nombre de spires.
+\end{itemize}
+Attention: Il y a plusieurs sources de perte de chaleur: Il y a une dissipation de l'énergie en forme de chaleur et il y a des \og Courants d'Eddy \fg{}, qui sont des courant non désirées. Ils peuvent être réduit en laminant le transformateur.\\
+Attention: La tension est augmentée par le transformateur durant le transport de l'électricité pour réduire la perte d'énergie à cause de la résistance. Ensuite, un autre transformateur est utilisé pour réduire la tension.\\
+Attention: Pour transformer un courant alternatif en un courant direct, on utilise un montage de rectification à mémoriser, on peut également utiliser des condensateurs:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{rectification}
+\end{figure}
+
+\subsection{Capacité}
+\textbf{Définitions:}
+\begin{itemize}
+\item Condensateur: Appareil qui permet de stocker de l'énergie électrique en créant un ddp entre les plaques.
+\item Capacité: Charge par tension qu'un condensateur peut stocker (en \si{\farad} ou \si{\coulomb\per\volt}). La capacité dépend aussi de la matière entre les plaques, la surface et la distance.
+\item Constante de temps: Temps pour lequel la tension diminue à 37\% de la charge initiale quand un condensateur \emph{décharge}, aussi connue comme $\tau = T_{1/2}/\ln 2$ avec $T_{1/2}$ la \og semi-vie \fg{} du condensateur (temps pour que la tension est réduite à la moitié).
+\end{itemize}
 \pagebreak
 
 \section{Physique Quantique}
