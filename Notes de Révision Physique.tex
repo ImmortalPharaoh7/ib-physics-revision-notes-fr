@@ -29,7 +29,14 @@
 
 \usepackage{hyperref} %Last package
 \urlstyle{same}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
 \begin{document}
+\pagenumbering{gobble}
 \begin{titlepage}
 \maketitle
 \begin{abstract}
@@ -266,7 +273,7 @@ Attention: Dans les situations où il y 2 planètes et c'est demandé de savoir 
 \subsection{Énergie Discrète et Radioactivité}
 \textbf{Définitions:}
 \begin{itemize}
-\item Photon: Particule qui transporte de l'énergie. Un photon est absorbé complètement, sinon il passe sans être absorbé.
+\item Photon: Particule qui transporte de l'énergie (onde électromagnétique). Un photon est absorbé complètement, sinon il passe sans être absorbé. Un photon possède une énergie $E=hf=hc/\lambda$.
 \item Notion d'énergie discrète: Les électrons perdent de l'énergie d'une manière discrète; ils émettent alors des photons d'une certain longueur d'onde qui correspond à l'énergie perdue. Ces électrons sont aussi dans des niveaux d'énergies discrètes; ils doivent être dans un niveau et ne peuvent jamais se trouver entre deux niveaux.
 \item Nucléide: Une configuration d'un nombre de protons et d'un nombre de protons (synonyme à un isotope).
 \item Interaction nucléaire forte: Force qui attire les nucléons ensemble avec une porté de \SI{e-15}{m}.
@@ -315,6 +322,17 @@ Plus l'énergie de liaison est haute, plus le noyau est stable. Donc les noyaux 
 \pagebreak
 
 \section{Production d'Énergie}
+\subsection{Sources d'Énergie}
+\textbf{Définitions:}
+\begin{itemize}
+\item Énergie primaire: Énergie qui est trouvé dans la nature comme le charbon, l'énergie solaire, etc.
+\item Énergie secondaire: Énergie qui est extrait de l'énergie primaire (électricité).
+\item Énergie spécifique: Énergie par unité de poids.
+\item Densité d'énergie: Énergie par unité de volume.
+\item Diagramme de Sankey: Diagramme qui explique la distribution d'énergie. Le pourcentage de l'énergie est proportionnelle à la largeur de la flèche.
+\item Mass critique: Mass minimale nécessaire pour démarrer une réaction en chaine.
+\end{itemize}
+Attention: L'astuce la plus importante dans ce thème est de regarder les unités pour savoir quoi multiplier et par quoi.
 \pagebreak
 
 \section{Phénomènes Ondulatoire}
@@ -429,6 +447,37 @@ Attention: Pour transformer un courant alternatif en un courant direct, on utili
 \pagebreak
 
 \section{Physique Quantique}
+\subsection{Interaction de la Matière avec le Rayonnement}
+\textbf{Définitions:}
+\begin{itemize}
+\item Effet photoélectrique: Quand une lumière est incidente à une surface métallique, il y a une émission d'électrons. Il faut faire attention que l'intensité change seulement le nombre de photons incidents chaque seconde et alors le taux d'émission des électrons mais ne change pas l'énergie cinétique maximum de l'électron; seule la fréquence peut changer ceci (ou alors changer de métal pour diminuer le travail d'extraction $\phi$).
+\[
+E_{max}=hf - \phi
+\]
+\item Travail d'extraction: Énergie que l'électron doit dépenser pour s'échapper du métal.
+\item Différence de potentielle d'arrêt $V_s$: Tension pour laquelle aucun électron peut atteindre pour une fréquence. Dans cette situation, la pile est inversée et donc la borne négative est l'autre plaque. Équation à retenir: $E_{max}=V_s e$ pour $e$ comme charge d'électron.
+\item Modèle d'Einstein: Modèle qui dit que la lumière est composée des particules (photons) avec une énergie discrète. Une des preuves de ceci est le fait que les électrons sont émis instantanément car l'énergie est absorbé d'un seul coup (si c'était une onde il y aura un délai).
+\item Hypothèse de De Broglie: Chaque particule en mouvement a une propriété ondulatoire. La matière donc peut se diffracter si elle passe par une fente comparable à sa longueur d'onde $\lambda = h/f$.
+\item Modèle de Bohr: Les électrons orbitent le noyau dans des niveaux d'énergie discrètes, il ne peut pas exister entre les niveaux. L'énergie orbitale $E \propto n^{-2}$ pour $n$ les niveaux d'énergie. Ce modèle ne fonctionne pas pour un atome avec plusieurs électrons en orbite.
+\item Modèle de Schrödinger: La description des particules est par une fonction ondulatoire de probabilité $\psi$. La probabilité de trouver un électron dans un volume $\Delta V$ est $P(r)=|\psi|^2 \Delta V$. Autrement dit, la probabilité de trouver l'électron est plus haute quand la fonction est proche de son sommet.
+\item Incertitude de Heisenberg: Il est impossible de mesurer la position et la quantité de mouvement avec une grande précision. Si on diminue la taille de la fente, l'effet de diffraction est plus prononcé. Même idée pour l'énergie et le temps.
+\item Effet tunnel quantique: Les particules peuvent s'échapper des barrières d'énergie sans avoir nécessairement l'énergie suffisante; il y a une probabilité non-nulle de passer la barrière sans avoir l'énergie suffisante.
+\end{itemize}
+Attention: Pour que le paire particule et anti-particule annihilation / production prend place, il faut être près d'un nucléon afin conserver la quantité de mouvement et l'énergie.
+
+\subsection{Physique Nucléaire}
+\textbf{Définitions:}
+\begin{itemize}
+\item Constante de désintégration $\lambda$: Probabilité qu'un noyau se désintègre par unité de temps $\lambda = \frac{\ln 2}{T_{1/2}}$.
+\item Niveaux de l'atome et de noyau: Les noyaux ainsi que les atomes ont des niveaux d'énergie discrète. Le rayonnement gamma est émit quand le noyau se désexcite.
+\end{itemize}
+
+\textbf{Techniques:}
+\begin{itemize}
+\item Diffraction de Rutherford: Déterminer le rayon de l'atome en envoyant des particules alpha sur l'atome avec une énergie cinétique et déterminer la distance minimum d'approche afin d'être renvoyée. Prouve l'existence d'une force nucléaire forte car si l'énergie cinétique est trop élevée, la particule ne revient pas.
+\item On peut également déterminer le rayon d'un atome en faisant passer des électrons entre un cristal de cet atome et trouver la largeur de la fente à travers les figures de diffraction. Le rayon d'un atome est d'ordre \SI{e-15}{m}.
+\item Postulation du neutrino: En mesurant l'énergie cinétique de la particule Beta, on constate qu'il y a un manque d'énergie; l'énergie cinétique des électrons peuvent prendre des valeurs continues. Alors il était évident qu'il y avait une particule qui était émise qui n'interagit pas avec la matière.
+\end{itemize}
 \pagebreak
 
 \section{Astrophysique}
